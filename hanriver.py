@@ -112,5 +112,5 @@ def run(file1):
             elif i == "이":
               al1 = al1 + "/"
           print(cn(al1[1:]))
-
+run("main2.han")
 
