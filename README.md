@@ -26,6 +26,7 @@ pip install hanriver
 주의:얼어붙은 으로 시작하고 ~ 으로 끝나야 합니다
 # run code:
 from hanriver import hanriver
+
 hanriver.run("main2.han")
 # bug(fixed)
 -
