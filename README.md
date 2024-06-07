@@ -25,6 +25,8 @@ hanriver meme lang made by dev_pine(12세 2024 기준)
 # run code:
 from hanriver import hanriver
 hanriver.run("main2.han")
+# bug(fixed)
+-
 # comming soon.......
 1.허접위키(website)
 
