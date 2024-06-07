@@ -60,7 +60,7 @@ def cn(expression):
 
 
 def run(file1):
-  with open(file1, "r") as file:
+  with open(file1, "r", encoding="utf-8") as file:
     han = file.read().replace("\n", "")
     hanl = han.split(";")
     val = {}
