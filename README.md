@@ -28,8 +28,8 @@ pip install hanriver
 from hanriver import hanriver
 
 hanriver.run("main2.han")
-# bug(fixed)
--
+# history:
+-2024/6/07 9:52pm import error fixed
 # comming soon.......
 1.허접위키(website)
 
