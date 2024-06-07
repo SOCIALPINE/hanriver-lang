@@ -114,4 +114,4 @@ def run(file1):
               al1 = al1 + "*"
             elif i == "이":
               al1 = al1 + "/"
-          print(cn(al1))
+          print(cn(al1[1:]))
