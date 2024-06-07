@@ -8,8 +8,9 @@ def cn(expression):
   operand_stack = []
   tokens = []
   token = ""
-  for char in expression:
-    if char.isdigit():
+  for i, char in enumerate(expression):
+    if char.isdigit() or (char == '-' and
+                          (i == 0 or expression[i - 1] in "+-*/")):
       token += char
     else:
       if token:
@@ -18,8 +19,9 @@ def cn(expression):
       tokens.append(char)
   if token:
     tokens.append(token)
+
   for token in tokens:
-    if token.isdigit():
+    if token.lstrip('-').isdigit():
       operand_stack.append(int(token))
     elif token in "+-*/":
       while operator_stack and precedence[token] <= precedence[
@@ -53,6 +55,7 @@ def cn(expression):
     elif operator == "/":
       result = operand1 / operand2
     operand_stack.append(result)
+
   return operand_stack[0] if operand_stack else None
 
 
@@ -77,7 +80,7 @@ def run(file1):
             if not al:
               al += "-1"
             elif (al[-1] == "/" or al[-1] == "*"):
-              al += "1"
+              al += "-1"
             else:
               al += "-1"
           elif i == "양":
@@ -104,13 +107,11 @@ def run(file1):
               if not al1:
                 al1 += "-1"
               elif (al1[-1] == "/" or al1[-1] == "*"):
-                al1 += "1"
+                al1 += "-1"
               else:
                 al1 += "-1"
             elif i == "양":
               al1 = al1 + "*"
             elif i == "이":
               al1 = al1 + "/"
-          print(cn(al1[1:]))
-run("main2.han")
-
+          print(cn(al1))
