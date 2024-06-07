@@ -1,5 +1,5 @@
 # hanriver-lang
-hanriver meme lang made by dev_pine
+hanriver meme lang made by dev_pine(12세 2024 기준)
 # 코딩
 꽁,고,양,이,얼어붙은,돌 6개 키워드로 이루어진 언어입니다.
 +주의:모든 줄 마지막에는 ; 을 붙여야 합니다.
