@@ -22,6 +22,9 @@ hanriver meme lang made by dev_pine(12세 2024 기준)
 얼어붙은꽁꽁고~;
 출력:1
 주의:얼어붙은 으로 시작하고 ~ 으로 끝나야 합니다
+# run code:
+from hanriver import hanriver
+hanriver.run("main2.han")
 # comming soon.......
 1.허접위키(website)
 
