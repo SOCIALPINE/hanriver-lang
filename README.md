@@ -1,5 +1,5 @@
 # hanriver-lang
-hanriver meme lang made by dev_pine(12세 2024 기준)
+hanriver meme lang made by dev_pine
 # install
 pip install hanriver
 # 코딩
