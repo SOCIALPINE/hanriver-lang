@@ -31,5 +31,5 @@ hanriver.run("main2.han")
 # history:
 -2024/6/07 9:52pm import error fixed
 # comming soon.......
-1.허접위키(website)
+1.....
 
